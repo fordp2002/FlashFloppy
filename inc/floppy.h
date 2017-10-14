@@ -141,6 +141,11 @@ extern const uint16_t mfmtab[];
 static inline uint16_t bintomfm(uint8_t x) { return mfmtab[x]; }
 uint8_t mfmtobin(uint16_t x);
 
+/* FM conversion. */
+extern const uint16_t fmtab[];
+static inline uint16_t bintofm(uint8_t x) { return fmtab[x]; }
+uint8_t fmtobin(uint16_t x);
+
 /* External API. */
 void floppy_init(uint8_t fintf_mode);
 void floppy_insert(unsigned int unit, struct v2_slot *slot);

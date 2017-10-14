@@ -4,3 +4,5 @@ OBJS += hfe.o
 OBJS += img.o
 OBJS += image.o
 OBJS += mfm.o
+OBJS += acorn_dfs.o
+OBJS += fm.o
